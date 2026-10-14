@@ -57,7 +57,7 @@ Login routes each user to their role's screens. Roles: `customer`, `employee`, `
 - Redis: cache, rate limits, OTP limits, Socket.IO adapter
 - BullMQ (on Redis) for background jobs: WhatsApp codes, push, payment checks, AI embeddings
 - Socket.IO for realtime (order status, driver location, chat)
-- Validation: class-validator DTOs | API docs: Swagger | Logs: pino | Tests: Jest + Supertest
+- Validation: class-validator DTOs | API docs: Swagger | Logs: pino | Tests: Vitest + Supertest | Lint: oxlint (NestJS 12 defaults, chosen Oct 14 over Jest + ESLint)
 
 **External services**
 - WhatsApp Cloud API (Meta): login verification codes ONLY (authentication templates)
@@ -163,7 +163,8 @@ At the end of each work session, append a short entry to `docs/LOG.md`: what wor
 ## Current status
 
 - Contract signed Oct 14, 2026.
-- Oct 14: laptop installs all verified (see docs/LOG.md). Repo skeleton created at `C:\Users\kamel\code\mrbrand` (git initialized, branch `main`, no commits yet).
-- Next step: first commit + private GitHub repo, then scaffold NestJS in `server/`, Docker Compose (Postgres + Redis) in `infra/`, Flutter in `app/`.
+- Oct 14: laptop installs all verified (see docs/LOG.md). Repo at `C:\Users\kamel\code\mrbrand`, pushed to GitHub `kemo24n/mrbrand`.
+- Oct 14: NestJS 12 scaffolded in `server/` (pnpm, strict TS, Vitest, oxlint) on branch `setup/server`.
+- Next step: Docker Compose (Postgres + pgvector, Redis) in `infra/`, then Flutter in `app/`.
 
 (Update this section as we go.)
