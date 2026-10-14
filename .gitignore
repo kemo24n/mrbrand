@@ -14,6 +14,7 @@ GoogleService-Info.plist
 node_modules/
 dist/
 coverage/
+*.tsbuildinfo
 *.log
 .pnpm-store/
 

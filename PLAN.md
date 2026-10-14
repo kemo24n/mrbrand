@@ -27,7 +27,7 @@ The app talks directly to outside services ONLY for map tiles and receiving push
 ## Install on the laptop
 
 - [ ] Git
-- [ ] VS Code + extensions: Flutter, Dart, Prisma, ESLint, Prettier, Docker, GitLens, Error Lens
+- [ ] VS Code + extensions: Flutter, Dart, Prisma, Oxc (oxlint), Prettier, Docker, GitLens, Error Lens
 - [ ] Claude Code
 - [ ] Flutter SDK (stable), run `flutter doctor` until all green
 - [ ] Android Studio (Android SDK + emulator)
@@ -129,7 +129,7 @@ After each skill, write a one-page note in `docs/notes/` in your own words.
 | 17 | Docker | Dockerfiles, Compose, volumes, networks | Week 4 | Docker "Get started" |
 | 18 | Deployment | VPS, Caddy, Cloudflare, GitHub Actions CI/CD | Weeks 4 + 11 | Do it twice: staging, then prod |
 | 19 | Security | OWASP API + Mobile Top 10 | Week 11 | owasp.org |
-| 20 | Testing | Unit, API, k6 load tests | Weeks 10 to 11 | Jest, k6 docs |
+| 20 | Testing | Unit, API, k6 load tests | Weeks 10 to 11 | Vitest, k6 docs |
 | 21 | Monitoring | Sentry, logs, uptime, backups + restore | Week 11 | Own production server |
 | 22 | App store publishing | Signing, listings, review rules, TestFlight | Weeks 12 to 13 | Play + App Store Review Guidelines |
 | 23 | System design basics | Draw any app's architecture before coding | Ongoing | System Design Primer (GitHub) |
