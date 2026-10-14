@@ -1,0 +1,41 @@
+# ---- Secrets (NEVER commit) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# ---- Node / NestJS (server/) ----
+node_modules/
+dist/
+coverage/
+*.log
+.pnpm-store/
+
+# ---- Flutter / Dart (app/) ----
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+*.g.dart.tmp
+app/android/.gradle/
+app/android/local.properties
+app/ios/Pods/
+app/ios/Flutter/ephemeral/
+
+# ---- Infra ----
+infra/backups/
+infra/data/
+
+# ---- Editors / OS ----
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
